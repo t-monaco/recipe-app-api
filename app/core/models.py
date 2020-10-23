@@ -21,7 +21,7 @@ class UserManager(BaseUserManager):
         superuser.is_superuser = True
         superuser.save(using=self._db)
 
-        return  superuser
+        return superuser
 
 
 class User(AbstractBaseUser, PermissionsMixin):
